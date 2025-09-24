@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import { HiX, HiMenu } from "react-icons/hi";
-import logo from "../assets/logo/logo.svg";
+import logo from "../assets/logo/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,13 +73,9 @@ export default function Header() {
             )}
           </div>
 
-          <div className="hidden md:flex text-white">
-            <div className="relative overflow-hidden rounded-xl">
-              <Button text={"Agenda tu Cita"} />
-              <div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
-                            -translate-x-full hover:translate-x-full transition-transform duration-1000 pointer-events-none"
-              ></div>
+          <div className="hidden md:flex">
+            <div className="relative rounded-xl transition-all duration-300 ease">
+              <Button text={"Agenda tu Cita"} className="p-3" />
             </div>
           </div>
         </nav>
@@ -87,7 +83,7 @@ export default function Header() {
         {/* === Menú desplegable móvil === */}
         <div
           className={`fixed top-16 left-0 w-full h-screen flex flex-col items-center 
-              justify-start pt-32 gap-8 text-2xl font-bold transform transition-all duration-500 ease-out z-40
+              justify-start py-26 gap-8 text-2xl font-bold transform transition-all duration-500 ease-out z-40
               /* Efecto Liquid Glass para móvil */
               bg-black/20 backdrop-blur-3xl
               border-t border-white/10 shadow-2xl shadow-black/20
@@ -134,7 +130,7 @@ export default function Header() {
                   : "none",
               }}
             >
-              <Button text={"Agenda tu Cita"} />
+              <Button text={"Agenda tu Cita"} className="h-16" />
             </div>
           </div>
         </div>
