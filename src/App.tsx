@@ -1,5 +1,6 @@
 import Header from "./layouts/Header";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Home />
+      <Services />
     </>
   );
 }

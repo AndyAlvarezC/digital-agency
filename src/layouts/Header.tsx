@@ -10,7 +10,7 @@ export default function Header() {
     <>
       <header className="fixed top-0 w-full flex md:p-6 justify-center z-50 overflow-hidden">
         <nav
-          className="relative w-full md:w-[55%] h-16 p-4 md:h-20 flex items-center justify-between 
+          className="relative w-full md:w-[80%] h-16 p-4 md:h-20 flex items-center justify-between 
                        /* Efecto Liquid Glass Mobile */
                       bg-white/10 backdrop-blur-xl border-b border-white/20 shadow-lg
                        /* Efecto Liquid Glass Desktop */
@@ -54,7 +54,7 @@ export default function Header() {
           </div>
 
           {/* === Menú desktop === */}
-          <div className="hidden md:flex gap-8 items-center">
+          <div className="hidden md:flex md:text-xl gap-8 items-center">
             {["Inicio", "Servicios", "Sobre Nosotros", "Contacto"].map(
               (item, index) => (
                 <p
