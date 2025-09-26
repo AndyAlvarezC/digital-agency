@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<"dark" | "vibrant">("dark");
+  const [_theme, _setTheme] = useState<"dark" | "vibrant">("dark");
 
   const DarkTheme = () => (
     <div className="fixed inset-0 z-0 min-h-screen w-full overflow-hidden">
@@ -65,7 +65,7 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div className="absolute inset-0 bg-black/5" />
     </div>
   );
-
+  // @ts-ignore
   const VibrantTheme = () => (
     <div className="fixed inset-0 z-0 min-h-screen w-full overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-indigo-900 to-violet-950">
@@ -131,7 +131,6 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <div className="min-h-screen w-full flex flex-col">
-
       {/* Fondo */}
       <DarkTheme />
 

@@ -51,9 +51,9 @@ export default function ChatBot() {
   const [selectedService, setSelectedService] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
-  const [customerName, setCustomerName] = useState("");
-  const [appointment, setAppointment] = useState<Appointment | null>(null);
-  const [showReminder, setShowReminder] = useState(false);
+  const [_customerName, setCustomerName] = useState("");
+  const [_appointment, setAppointment] = useState<Appointment | null>(null);
+  const [_showReminder, setShowReminder] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const services = [
