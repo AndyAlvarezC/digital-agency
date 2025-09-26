@@ -5,6 +5,26 @@ body {
   color: #EDECEA;
 }
 
+/* ==================== */
+/* ANIMACIONES PARA EL FONDO ANIMADO */
+/* ==================== */
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(180deg); 
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
 
 /* Animaciones para el menú y links */
 @keyframes fadeInUp {
