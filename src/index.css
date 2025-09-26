@@ -30,9 +30,34 @@ body {
   min-height: 100vh;
 }
 
+<<<<<<< Updated upstream
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+=======
+:root {
+  --black1: #15151D;
+  --black2: #26292A;
+  --grey: #A9A9A9;
+  --white: #EDECEA;
+  --blue1: #2A77E9;
+  --blue2: #1D48AC;
+  --blue3: #062F5B;
+  --teal: #008080;
+}
+
+/* ==================== */
+/* ANIMACIONES PARA EL FONDO ANIMADO */
+/* ==================== */
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(180deg); 
+  }
+>>>>>>> Stashed changes
 }
 
 button {
