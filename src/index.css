@@ -25,6 +25,9 @@ a:hover {
 =======
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 body {
@@ -46,6 +49,17 @@ h1 {
   --grey: #A9A9A9;
   --white: #EDECEA;
   --blue1: #2A77E9;
+  --blue2: #1D48AC;
+  --blue3: #062F5B;
+  --teal: #008080;
+}
+
+:root {
+  --black1: #15151D;
+  --black2: #26292A;
+  --grey: #A9A9A9;
+  --white: #EDECEA;
+  --blue1: #2a77e9;
   --blue2: #1D48AC;
   --blue3: #062F5B;
   --teal: #008080;
