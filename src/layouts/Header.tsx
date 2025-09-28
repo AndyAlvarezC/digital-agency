@@ -61,7 +61,10 @@ export default function Header() {
               (item, index) => (
                 <p
                   key={item}
-                  onClick={() => { scrollTo(item); setIsOpen(false) }}
+                  onClick={() => {
+                    scrollTo(item);
+                    setIsOpen(false);
+                  }}
                   className="cursor-pointer text-white/80 hover:text-white transition-all duration-300
                           relative px-3 py-2 rounded-lg"
                   style={{
@@ -77,7 +80,10 @@ export default function Header() {
 
           <div className="hidden md:flex">
             <div className="relative rounded-xl transition-all duration-300 ease">
-              <Button text={"Agenda tu Cita"} className="p-3" />
+              <Button
+                text={"Agenda tu Cita"}
+                className="p-3"
+              />
             </div>
           </div>
         </nav>
@@ -101,7 +107,10 @@ export default function Header() {
               (item, index) => (
                 <p
                   key={item}
-                  onClick={() => { scrollTo(item); setIsOpen(false) }}
+                  onClick={() => {
+                    scrollTo(item);
+                    setIsOpen(false);
+                  }}
                   className="cursor-pointer hover:text-gray-300 transition-all duration-300 text-white/90
                           py-4 px-6 rounded-xl hover:bg-white/10 backdrop-blur-sm
                           transform hover:scale-105 active:scale-95
@@ -132,7 +141,10 @@ export default function Header() {
                   : "none",
               }}
             >
-              <Button text={"Agenda tu Cita"} className="h-16" />
+              <Button
+                text={"Agenda tu Cita"}
+                className="h-16"
+              />
             </div>
           </div>
         </div>
