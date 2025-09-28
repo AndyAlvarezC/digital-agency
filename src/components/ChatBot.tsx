@@ -54,7 +54,9 @@ export default function ChatBot() {
   const [_customerName, setCustomerName] = useState("");
   const [_appointment, setAppointment] = useState<Appointment | null>(null);
   const [_showReminder, setShowReminder] = useState(false);
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const firstRender = useRef(true);
 
   const services = [
     { name: "Corte de Cabello", duration: "30 min", price: "€20" },
@@ -81,12 +83,20 @@ export default function ChatBot() {
     { time: "17:30", available: true },
   ];
 
+  // Scroll solo dentro del contenedor del chat
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const container = messagesEndRef.current?.parentElement;
+    if (container) {
+      container.scrollTop = container.scrollHeight;
+    }
   };
 
   useEffect(() => {
-    scrollToBottom();
+    if (!firstRender.current) {
+      scrollToBottom();
+    } else {
+      firstRender.current = false;
+    }
   }, [messages]);
 
   const addMessage = (
@@ -208,7 +218,6 @@ export default function ChatBot() {
           }, 1000);
           setCurrentStep("confirmed");
 
-          // Simular recordatorio después de 8 segundos
           setTimeout(() => {
             setShowReminder(true);
             addMessage(
@@ -220,7 +229,6 @@ export default function ChatBot() {
             );
           }, 8000);
 
-          // Simular fin del servicio después de 15 segundos
           setTimeout(() => {
             addMessage(
               `¡Gracias por visitarnos, ${name}! Esperamos que estés contento con tu ${selectedService.toLowerCase()}. 🌟`,

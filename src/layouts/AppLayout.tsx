@@ -4,7 +4,7 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [_theme, _setTheme] = useState<"dark" | "vibrant">("dark");
 
   const DarkTheme = () => (
-    <div className="fixed inset-0 z-0 min-h-screen w-full overflow-hidden">
+    <div className="fixed inset-0 z-0 w-full overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-slate-900 to-black">
         <div
           className="absolute inset-0 bg-gradient-to-tr from-gray-800/10 via-transparent to-slate-800/15 animate-pulse"
@@ -67,7 +67,7 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
   // @ts-ignore
   const VibrantTheme = () => (
-    <div className="fixed inset-0 z-0 min-h-screen w-full overflow-hidden">
+    <div className="fixed inset-0 z-0 w-full overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-indigo-900 to-violet-950">
         <div
           className="absolute inset-0 bg-gradient-to-tr from-pink-900/20 via-transparent to-purple-800/25 animate-pulse"
@@ -130,7 +130,7 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
 
   return (
-    <div className="min-h-screen w-full flex flex-col">
+    <div className=" w-full flex flex-col">
       {/* Fondo */}
       <DarkTheme />
 

@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function About() {
   return (
-    <section className="flex items-center justify-center px-6 md:px-16">
+    <section className="flex items-center min-h-screen justify-center px-6 md:px-16">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
         {/* Imagen con glow */}
         <div className="relative flex justify-center">
