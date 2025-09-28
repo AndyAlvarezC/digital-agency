@@ -3,7 +3,7 @@ import FormField from "../components/FormField";
 
 export default function Form() {
   return (
-    <section className="flex min-h-screen justify-center items-center p-4">
+    <section id="Contacto" className="flex min-h-screen justify-center items-center p-4">
       <div className="flex flex-col justify-center items-center gap-16 w-full max-w-3xl">
         <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent">
           Estamos para ayudarte

@@ -3,7 +3,7 @@ import ServicesCard from "../components/ServicesCard";
 
 export default function Services() {
   return (
-    <section className="flex justify-center py-24 min-h-screen">
+    <section id="Servicios" className="flex justify-center py-24 min-h-screen">
       <div className="w-full md:w-4/5 px-6">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">
           Soluciones digitales hechas a tu medida

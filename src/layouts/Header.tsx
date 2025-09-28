@@ -2,9 +2,11 @@ import { useState } from "react";
 import Button from "../components/Button";
 import { HiX, HiMenu } from "react-icons/hi";
 import logo from "../assets/logo/logo.png";
+import useScrollTo from "../utils/useScrollTo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollTo = useScrollTo()
 
   return (
     <>
@@ -59,7 +61,7 @@ export default function Header() {
               (item, index) => (
                 <p
                   key={item}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => { scrollTo(item); setIsOpen(false) }}
                   className="cursor-pointer text-white/80 hover:text-white transition-all duration-300
                           relative px-3 py-2 rounded-lg"
                   style={{
@@ -99,7 +101,7 @@ export default function Header() {
               (item, index) => (
                 <p
                   key={item}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => { scrollTo(item); setIsOpen(false) }}
                   className="cursor-pointer hover:text-gray-300 transition-all duration-300 text-white/90
                           py-4 px-6 rounded-xl hover:bg-white/10 backdrop-blur-sm
                           transform hover:scale-105 active:scale-95
