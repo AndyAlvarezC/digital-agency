@@ -5,7 +5,7 @@ export default function Form() {
   return (
     <section id="Contacto" className="flex min-h-screen justify-center items-center p-4">
       <div className="flex flex-col justify-center items-center gap-16 w-full max-w-3xl">
-        <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-bold text-center">
           Estamos para ayudarte
         </h1>
 
@@ -131,7 +131,7 @@ export default function Form() {
           {/* Botón */}
           <Button
             text="Enviar"
-            className="bg-blue-500/80 hover:bg-blue-600/90 backdrop-blur-md transition-colors text-white py-3 rounded-lg font-semibold mt-4 shadow-lg"
+            className=" transition-all duration-300 ease bg-blue-500/80 hover:bg-blue-600/90 backdrop-blur-md text-white py-3 rounded-lg font-semibold mt-4 shadow-lg"
           />
         </form>
       </div>

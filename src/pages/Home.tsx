@@ -4,7 +4,10 @@ import HighlightsCard from "../components/HighlightsCard";
 export default function Home() {
   return (
     <>
-      <section id="Inicio" className="flex justify-center min-h-screen py-24 md:py-0 items-center">
+      <section
+        id="Inicio"
+        className="flex justify-center min-h-screen items-center pt-24 sm:pt-48 lg:pt-16"
+      >
         <div className="flex flex-col text-center gap-8 md:gap-16">
           <h1 className="text-4xl md:text-6xl font-extrabold">
             Agency Flex Innovation

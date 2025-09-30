@@ -30,7 +30,34 @@ html, body {
   background: radial-gradient(circle, var(--tw-gradient-stops));
 }
 
-/* Animaciones para el menú y links */
+/* 🔥 Animaciones optimizadas para AppLayout */
+
+@keyframes fadeGradient {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.animate-fadeGradient {
+  animation: fadeGradient 12s ease-in-out infinite;
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 6s ease-in-out infinite;
+}
+
+.animate-bounce-slower {
+  animation: bounce-slow 10s ease-in-out infinite;
+}
+
+/* ==================== */
+/* ANIMACIONES PARA EL MENÚ Y LINKS */
+/* ==================== */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -67,37 +94,45 @@ html, body {
   }
 }
 
+/* ==================== */
+/* EFECTOS EXTRA */
+/* ==================== */
+
 @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-        @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: scale(0.95);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-        .animate-fadeIn {
-          animation: fadeIn 0.5s ease-out;
-        }
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
 
-        .animate-slideIn {
-          animation: slideIn 0.3s ease-out;
-        }
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
 
-    /* Quitar flechas en inputs number */
+/* ==================== */
+/* INPUTS NUMBER */
+/* ==================== */
+
+/* Quitar flechas en inputs number */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
