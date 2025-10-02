@@ -1,12 +1,24 @@
 @import "tailwindcss";
 
 html, body {
+  /* user-select: none; */
   background-color: #141516;
   color: #EDECEA;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+:root {
+  --black1: #15151D;
+  --black2: #26292A;
+  --grey: #A9A9A9;
+  --white: #EDECEA;
+  --blue1: #2a77e9;
+  --blue2: #1D48AC;
+  --blue3: #062F5B;
+  --teal: #008080;
 }
 
 /* ==================== */
@@ -137,8 +149,4 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
 }
